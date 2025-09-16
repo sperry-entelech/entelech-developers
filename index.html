@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Losing Deals to Slow Proposals | Lightning-Fast Proposal Generation for Dev Shops</title>
+    <meta name="description" content="Turn 3-day proposal delays into 2-hour responses. Win 35% more RFPs by being first to market with professional, detailed proposals.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Stop Losing Deals to Slow Proposals | Lightning-Fast Proposal Generation">
+    <meta property="og:description" content="Turn 3-day proposal delays into 2-hour responses. Win 35% more RFPs by being first to market.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://developers.entelech.net">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .cta-button {
+            background: #000;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid #000;
+        }
+
+        .cta-button:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin: 60px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000;
+            display: block;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
+
+        /* Problem Section */
+        .problem {
+            padding: 80px 0;
+            background: #000;
+            color: #fff;
+        }
+
+        .problem h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .problem-item {
+            padding: 30px;
+            background: #1a1a1a;
+            border-radius: 8px;
+        }
+
+        .problem-icon {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .problem-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+        }
+
+        .problem-item p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        /* Solution Section */
+        .solution {
+            padding: 80px 0;
+        }
+
+        .solution h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .solution-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .solution-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+        }
+
+        .solution-text p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .solution-features {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .solution-features li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .solution-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .portal-mockup {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #e5e5e5;
+        }
+
+        .portal-url {
+            background: #000;
+            color: #fff;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: monospace;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .proposal-preview {
+            text-align: left;
+            margin: 20px 0;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .proposal-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .proposal-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .proposal-status {
+            background: #28a745;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .proposal-details {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .proposal-timeline {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border-left: 4px solid #000;
+        }
+
+        /* Results Section */
+        .results {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .results h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .result-card {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .result-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .result-label {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Testimonial */
+        .testimonial {
+            padding: 80px 0;
+            background: #000;
+            color: #fff;
+        }
+
+        .testimonial-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .testimonial-quote {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        .testimonial-author {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .testimonial-title {
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 80px 0;
+        }
+
+        .pricing h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .pricing-card {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #f8f9fa;
+            padding: 50px 40px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #e5e5e5;
+        }
+
+        .pricing-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .pricing-amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .pricing-period {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .pricing-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .guarantee {
+            background: #fff;
+            border: 2px solid #000;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            font-weight: 600;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 80px 0;
+            background: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #ccc;
+        }
+
+        .cta-button-large {
+            background: #fff;
+            color: #000;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 2px solid #fff;
+            display: inline-block;
+        }
+
+        .cta-button-large:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 0;
+            background: #f8f9fa;
+            text-align: center;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero-stats {
+                gap: 30px;
+            }
+
+            .solution-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .proposal-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">Entelech</div>
+                <a href="#pricing" class="cta-button">Book Discovery Call</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Stop Losing Deals to Slow Proposals</h1>
+            <p class="subtitle">Turn 3-day proposal delays into 2-hour responses. Win 35% more RFPs by being first to market with professional, detailed proposals</p>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">35%</span>
+                    <div class="stat-label">Higher Win Rate</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3x</span>
+                    <div class="stat-label">More RFPs Handled</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2 Hours</span>
+                    <div class="stat-label">Average Response Time</div>
+                </div>
+            </div>
+
+            <a href="#pricing" class="cta-button-large">See How It Works</a>
+        </div>
+    </section>
+
+    <section class="problem">
+        <div class="container">
+            <h2>The Speed vs Quality Death Spiral</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #ccc; max-width: 800px; margin: 0 auto;">You know your team can deliver better solutions than competitors, but by the time you craft the perfect proposal, the deal is already signed elsewhere. Speed beats capability in the RFP game.</p>
+
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <div class="problem-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3>RFP Pile-Up</h3>
+                    <p>Quality opportunities stack up while you're still crafting the perfect response to last week's RFP. By the time you respond, they've already shortlisted faster competitors.</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                    </div>
+                    <h3>Manual Proposal Creation</h3>
+                    <p>Every proposal starts from scratch. Copy-pasting from old proposals, reformatting, updating pricing—it takes 2-3 days minimum just to look professional.</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                            <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                            <path d="M13 12h3"/>
+                            <path d="M5 12h3"/>
+                        </svg>
+                    </div>
+                    <h3>Speed vs Capability</h3>
+                    <p>Clients choose faster responders over better developers. You lose deals not because of technical capability, but because competitors submit adequate proposals in hours, not days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solution">
+        <div class="container">
+            <h2>Lightning-Fast Proposal Generation</h2>
+
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h3>Professional Proposals in Under 2 Hours</h3>
+                    <p>Transform your proposal process from a 3-day bottleneck into a 2-hour competitive advantage. Pre-built templates, automated pricing, and smart content generation mean you're first to respond without sacrificing quality.</p>
+
+                    <ul class="solution-features">
+                        <li>Branded proposal portal (proposals.yourdevshop.com)</li>
+                        <li>Automated proposal generation from RFP requirements</li>
+                        <li>Smart pricing calculations and resource estimation</li>
+                        <li>Team availability and capacity planning</li>
+                        <li>Professional presentation templates</li>
+                        <li>Instant PDF generation and client delivery</li>
+                    </ul>
+
+                    <p><strong>Result:</strong> Win 35% more deals by being first to market with professional, detailed proposals that arrive while competitors are still planning their approach.</p>
+                </div>
+
+                <div class="portal-mockup">
+                    <div class="portal-url">proposals.yourdevshop.com</div>
+                    <h4>Proposal Generation Dashboard</h4>
+                    <div class="proposal-preview">
+                        <div class="proposal-header">
+                            <div>
+                                <div class="proposal-title">E-commerce Platform RFP</div>
+                                <div class="proposal-details">Generated in 47 minutes • Sent to client</div>
+                            </div>
+                            <div class="proposal-status">SENT</div>
+                        </div>
+                        <div class="proposal-timeline">
+                            <strong>Project Timeline:</strong> 12 weeks<br>
+                            <strong>Team:</strong> 3 developers, 1 designer<br>
+                            <strong>Total:</strong> $124,500
+                        </div>
+                        <div style="font-size: 0.9rem; color: #666;">
+                            Auto-generated from RFP requirements • Custom branding applied
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="results">
+        <div class="container">
+            <h2>What Happens When You Respond First</h2>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-number">35%</div>
+                    <div class="result-label">Higher Win Rate</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-number">3x</div>
+                    <div class="result-label">More RFPs Handled</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-number">2 Hours</div>
+                    <div class="result-label">Average Response Time</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-number">Zero</div>
+                    <div class="result-label">Late Submissions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial-content">
+                <p class="testimonial-quote">"We went from losing 70% of RFPs due to slow response times to winning 65% by being first with professional proposals. The system generates better proposals than we used to write manually, and they're ready in under 2 hours. Game changer."</p>
+                <div class="testimonial-author">David Kim</div>
+                <div class="testimonial-title">CTO, CodeCraft Solutions</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Lightning Proposal System</h2>
+
+            <div class="pricing-card">
+                <div class="pricing-title">Complete Proposal Automation</div>
+                <div class="pricing-amount">$2,500</div>
+                <div class="pricing-period">setup + $750/month consulting</div>
+
+                <ul class="pricing-features">
+                    <li>Custom branded proposal portal</li>
+                    <li>Automated proposal generation</li>
+                    <li>Smart pricing and resource estimation</li>
+                    <li>Team capacity planning integration</li>
+                    <li>Professional presentation templates</li>
+                    <li>Instant PDF generation and delivery</li>
+                    <li>RFP requirement parsing</li>
+                    <li>Monthly optimization consulting</li>
+                </ul>
+
+                <div class="guarantee">
+                    <strong>Guarantee:</strong> Reduce proposal time by 80% or you don't pay
+                </div>
+
+                <a href="https://calendly.com/entelech/discovery" class="cta-button-large">Book Discovery Call</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Stop Losing Deals to Faster Competitors</h2>
+            <p>Every day you take to respond is another deal walking away to someone who submitted yesterday</p>
+            <a href="https://calendly.com/entelech/discovery" class="cta-button-large">Book Your Discovery Call</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Entelech. Professional business automation consulting.</p>
+        </div>
+    </footer>
+
+    <!-- Calendly embed script -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
